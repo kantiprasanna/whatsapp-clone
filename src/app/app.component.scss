@@ -21,4 +21,51 @@
     left: 0px;
     box-shadow: -1px 1px 5px rgba(#333, 0.2);
     border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    #sidebar {
+        flex-basis: 30%;
+        border-right: 1px solid #e1e4e5;
+        display: flex;
+        flex-direction: column;
+        #sidebarHeader {
+            flex-basis: 67px;
+            background-color: #eeeeee;
+        }
+        #searchArea {
+            flex-basis: 50px;
+            background-color: #fbfbfb;
+            border-bottom: 1px solid #e1e4e5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            image {
+                position: absolute;
+                left: 30px;
+            }
+            input {
+                width: calc(90% - 30px);
+                border: 1px solid #f2f2f2;
+                border-radius: 7px;
+                height: 70%;
+                padding-left: 60px;
+                color: #9a9a9a;
+                outline: none;
+                 ::placeholder {
+                    color: 9a9a9a;
+                    font-weight: 100;
+                }
+            }
+        }
+        #noConvesations {
+            padding-top: 30px;
+            text-align: center;
+            color: #b9b9b9;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+    }
+    #chat {}
 }
